@@ -467,4 +467,4 @@ components
   })
   ```
 
-**[back to top](#table-of-contents)**
+**[Back to top](#table-of-contents)**
