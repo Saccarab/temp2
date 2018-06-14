@@ -91,16 +91,6 @@
     // good
     import Footer from './Footer';
     ```
- 
-
-  - **Props Naming**:
-
-    // bad
-    <MyComponent className = "fancy" />
-
-    // good
-    <MyComponent className="fancy" />
-    ```
 
 ## Declaration
 
