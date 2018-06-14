@@ -3,6 +3,7 @@
 ## Table of Contents
 
   1. [Basic Rules](#basic-rules)
+  1. [Folder Hierarchy](#folder-hierarchy)
   1. [Naming](#naming)
   1. [Declaration](#declaration)
   1. [Alignment](#alignment)
@@ -13,6 +14,7 @@
   1. [Tags](#tags)
   1. [Methods](#methods)
   1. [Ordering](#ordering)
+  1. [CSS Styling](#css-styling)
 
 ## Basic Rules
 
@@ -58,6 +60,23 @@
       return <div>{hello}</div>;
     }
     ```
+## Folder Hierarchy
+
+    
+We would now set up our directories like this:
+
+```
+components
+      ├── Events
+      │   ├── Events.js
+      │   ├── EventsButton.js
+      │   └── EventsItem.js
+      └── Groups
+          ├── Groups.js
+          ├── GroupsAdd.js
+          ├── GroupsAlert.js
+          └── GroupsTag.js
+```
 
 ## Naming
 
@@ -419,5 +438,33 @@
   1. *getter methods for `render`* like `getSelectReason()` or `getFooterContent()`
   1. *optional render methods* like `renderNavigation()` or `renderProfilePicture()`
   1. `render`
+
+## CSS Styling
+
+  - Necessarily indicate the tag type within the glamorous declaration.
+  
+  ```
+  // bad
+  <styled>
+    ...
+  </styled>
+   
+  const styled = glamorous.view({
+    flexDirection: "row",
+    flex: 1,
+    height: 80
+  })
+  
+  // good
+  <StyledView>
+    ...
+  </StyledView>
+   
+  const StyledView = glamorous.view({
+    flexDirection: "row",
+    flex: 1,
+    height: 80
+  })
+  ```
 
 **[⬆ back to top](#table-of-contents)**
