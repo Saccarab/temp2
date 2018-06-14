@@ -1,4 +1,4 @@
-# React Convention
+# Convention
 
 ## Table of Contents
 
@@ -467,4 +467,4 @@ components
   })
   ```
 
-**[Back to top](#table-of-contents)**
+**[⬆ back to top](#table-of-contents)**
